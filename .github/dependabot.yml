@@ -1,0 +1,23 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "23:30"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: expo
+    versions:
+    - 40.0.1
+    - 41.0.0
+  - dependency-name: react-native-screens
+    versions:
+    - 3.0.0
+    - 3.1.0
+  - dependency-name: react-native-svg
+    versions:
+    - 12.1.0
+  - dependency-name: lodash
+    versions:
+    - 4.17.20
